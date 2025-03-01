@@ -1,7 +1,5 @@
 const completeBtnSection = document.querySelectorAll('#complete-btn-section div button ');
-
 document.getElementById('task-count').innerText = completeBtnSection.length;
-
 for (const btn of completeBtnSection) {
     btn.addEventListener('click', function (event) {
         alert('Task added')
@@ -24,3 +22,13 @@ changeBgColor.addEventListener('click', function () {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.backgroundColor = randomColor;
 });
+
+document.getElementById('clear-history').addEventListener('click', function(){
+    const addedTask = document.getElementById('added-task');
+    const allTask = document.querySelectorAll('#added-task p');
+    addedTask.innerHTML = '';
+})
+
+document.getElementById('blog-button').addEventListener('click', function(){
+    window.location.href = './blog.html'
+})
