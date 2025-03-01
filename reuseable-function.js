@@ -12,4 +12,3 @@ function decrementTask(id) {
         alert('congrats!!! You have complete all the current task')
     }
 }
-
