@@ -9,6 +9,7 @@ function decrementTask(id) {
     const newTaskCount = taskCount - 1;
     document.getElementById('task-count').innerText = newTaskCount;
     if(newTaskCount <= 0){
-        alert('you have done...')
+        alert('congrates!!! You have complete all the current task')
     }
 }
+
