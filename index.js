@@ -32,3 +32,12 @@ document.getElementById('clear-history').addEventListener('click', function(){
 document.getElementById('blog-button').addEventListener('click', function(){
     window.location.href = './blog.html'
 })
+
+const date = new Date();
+const weekend = date.toDateString().split(' ')[0];
+const month = date.toDateString().split(' ')[1];
+const monthDate = date.toDateString().split(' ')[2];
+const Year = date.toDateString().split(' ')[3];
+
+document.getElementById('date').innerText = weekend + ' ,';
+document.getElementById('month-year').innerText = `${month} ${monthDate} ${Year}`;
