@@ -12,8 +12,8 @@ for (const btn of completeBtnSection) {
 
         const addedTask = document.getElementById('added-task');
         const createTaskHeading = document.createElement('p');
-        createTaskHeading.classList.add('p-3', 'my-3', 'bg-blue-50', 'text-sm');
-        createTaskHeading.innerText = 'You have Complete The Task' + ' ' + title.innerText;
+        createTaskHeading.classList.add('p-3', 'my-3', 'bg-blue-50', 'text-sm',);
+        createTaskHeading.innerText = `You have Complete The Task ${title.innerText} at `;
         addedTask.appendChild(createTaskHeading)
     })
 }
